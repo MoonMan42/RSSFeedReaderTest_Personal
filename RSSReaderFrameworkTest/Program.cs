@@ -19,7 +19,7 @@ namespace RSSReaderFrameworkTest
             SyndicationFeed feed = SyndicationFeed.Load(reader);
             foreach (SyndicationItem item in feed.Items)
             {
-                Console.WriteLine("Title: {0}", item.Title.Text);
+                Console.WriteLine($"Title: {item.Title.Text} \nSummary: {item.Summary.Text} \nLink{item.Links}");
             }
 
 
